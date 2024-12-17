@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    background: url(supra.gif) no-repeat center center;
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+.relogio {
+    margin-top: -200px;
+    margin-left: -500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilo para a seção de hora, minutos e segundos */
+.container {
+    display: flex;
+    flex-direction: row; /* Deixar os elementos em linha (horas, minutos, segundos) */
+    gap: 10px; /* Espaçamento entre os elementos */
+    font-size: 3rem;
+}
+
+.relogio div {
+    font-size: 48px; 
+    background: linear-gradient(to right, rgb(230, 57, 178), rgb(219, 35, 97), rgb(241, 222, 50),rgb(0, 102, 255)); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-fill-color: transparent; 
+    display: inline;
+    display: flex;
+    justify-content: end;
+    animation: animated 10s linear infinite; /* Aplica a animação chamada "animated" */
+}
+
+@keyframes animated {
+    to{background-position-x: 500px;}
+}
+
+#HORAS, #Minutos, #Segundos {
+    font-size: 100px;
+    display: block;
+}
+
+.tempo {
+    display:flex;
+    justify-content: end;
+    font-size: 1.5px;
+    color:transparent;
+    margin-top: 10px;
+}
+
+.div{
+    size: 12px;
+}
+.ponto{
+    font-size: 80px; 
+    background: linear-gradient(to right, rgb(230, 57, 178), rgb(219, 35, 97), rgb(241, 222, 50),rgb(0, 102, 255)); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-fill-color: transparent; 
+    display: inline;
+    margin-top: -2px;
+    animation: animated 35s linear infinite; /* Aplica a animação chamada "animated" */ 
+}
+@keyframes animated {
+    to{background-position-x: 1000px;}
+
+}
+#anual{
+    gap:50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
